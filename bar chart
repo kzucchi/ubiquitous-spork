@@ -1,0 +1,22 @@
+#like an "aha" moment when my code made a bar chart using a csv file
+#like now i get it. python is to powerbi data and csv files what being able to write vba was for excel
+#or what SQL was for Access back in the day
+#lighting up about why it makes so much sense to be able to be efficient and advanced in data work to write python for data visualizations and reporting in powerbi
+#thankful that I finally made the connection why python is useful and how to APPLY code to action
+
+#here's another snippet of code. nothing spectacular. 
+#I read a csv file and used the pandas to make a bar chart leveraging capability from matplotlib and seaborn. 
+
+
+
+import codecademylib3
+import matplotlib.pyplot as plt 
+import seaborn as sns
+import pandas as pd
+
+movies = pd.read_csv('movies.csv')
+
+# Create a bar chart for movie genre 
+sns.countplot(x='genre', data=movies)
+plt.show()
+plt.close()

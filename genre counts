@@ -1,0 +1,17 @@
+#I spent 5 years kinda fumbling with Python then a few weeks ago saw how valuable it is for automating things in PowerBI. 
+#Now I'm working from a place of passion instead of "value" and everything is "clicking". 
+#Putting a lot of code into my Jupyter notebook, but leaving a couple samples here.
+
+#example how to use pandas to count the number of records by column in a database
+#database is called movies in a csv file
+#columns refer to genres as the column attribute
+
+
+import pandas as pd
+
+movies = pd.read_csv('movies.csv')
+
+# Save the counts to genre_counts
+genre_counts = movies.genre.value_counts()
+print(genre_counts)
+

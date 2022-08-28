@@ -1,8 +1,13 @@
-#column statistics code
-#calculates the most expensive shoes (max) in the column
+#column statistics code examples
+#calculates the most expensive shoes (max) 
+#calculates number of unique colors
+
+
 import codecademylib3
 import pandas as pd
 
 orders = pd.read_csv('orders.csv')
 print(orders.head(10))
 most_expensive = orders.price.max()
+
+num_colors = orders.shoe_color.nunique()

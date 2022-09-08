@@ -21,3 +21,10 @@ import pandas as pd
 orders = pd.read_csv('orders.csv')
 pricey_shoes = orders.groupby('shoe_type').price.max()
 
+#examine an object
+print(pricey_shoes)
+
+#print the type of object
+print(type(pricey_shoes))
+
+

@@ -1,0 +1,10 @@
+#Sometimes file are too big to download to Excel .xlsx in Spins Satori
+#Large data extracts can be downloaded to csv.gx files
+#This is how to convert a csv.gx file to open using a python reader. 
+#This should already be in the python library
+
+
+with gzip. open('my_file.csv.gz', 'rt', newline='') as csv_file:
+csv_data = csv_file. read()
+with open('my_file.csv', 'wt') as out_file:
+out_file. write(csv_data)

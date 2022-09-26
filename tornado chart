@@ -1,0 +1,11 @@
+#code to make a tornado chart using matplotlib library
+#compare panel population across 2 factors such as age and sex
+
+fig, (ax_left, ax_right) = plt.subplots(ncols=2)
+ax_left.barh(pyramid["Age"],pyramid["M"])
+axleft.invert_xaxis()
+#ax_left.set_yticks([])
+ax_right.barh(pyramid["Age"],pyramid["F"])
+
+#label for left chart
+x_left.set_xlabel("Male pop (100m)")

@@ -1,0 +1,10 @@
+#reset_index will change a variable into a dataframe to run statistical commands such as min, max, avg, boxplot, histogram, etc
+#possible to change a variable such as pricey_shoes into a dataframe using a reset index command
+
+import codecademylib3
+import pandas as pd
+
+orders = pd.read_csv('orders.csv')
+
+pricey_shoes = orders.groupby('shoe_type').price.max().reset_index()
+print(pricey_shoes)
